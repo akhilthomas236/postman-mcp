@@ -2,8 +2,8 @@
   "servers": {
     "postman-mcp": {
       "type": "stdio",
-      "command": "npm",
-      "args": ["run", "start"]
+      "command": "npx",
+      "args": ["@akhilthomas236/postman-mcp"]
     }
   }
 }

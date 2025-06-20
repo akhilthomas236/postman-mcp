@@ -1,16 +1,29 @@
 {
-  "name": "postman-mcp",
+  "name": "@akhilthomas236/postman-mcp",
   "version": "1.0.0",
   "type": "module",
+  "description": "An MCP server for making HTTP requests like Postman",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
-    "dev": "tsc && node build/index.js"
+    "dev": "tsc && node build/index.js",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "An MCP server for making HTTP requests like Postman",
+  "keywords": [
+    "mcp",
+    "postman",
+    "http",
+    "api",
+    "model-context-protocol",
+    "rest-client"
+  ],
+  "author": "Akhil Thomas",
+  "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^0.4.0",
     "zod": "^3.22.4"
@@ -18,5 +31,19 @@
   "devDependencies": {
     "@types/node": "^20.10.0",
     "typescript": "^5.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhilthomas236/postman-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akhilthomas236/postman-mcp/issues"
+  },
+  "homepage": "https://github.com/akhilthomas236/postman-mcp#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "postman-mcp": "./build/index.js"
   }
 }
