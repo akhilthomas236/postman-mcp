@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "postman-mcp": {
+      "type": "stdio",
+      "command": "npm",
+      "args": ["run", "start"]
+    }
+  }
+}
