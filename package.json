@@ -1,6 +1,6 @@
 {
   "name": "@akhilthomas236/postman-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "An MCP server for making HTTP requests like Postman",
   "main": "build/index.js",
